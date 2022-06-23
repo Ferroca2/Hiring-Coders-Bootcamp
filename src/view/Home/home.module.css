@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.window{
+    height: 100vh;
+    background:url('./imgs/back.jpg') no-repeat center center/cover;
+    position: relative;
+}
+.window::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.6);
+}
+.window *{
+    z-index: 10;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
